@@ -1,0 +1,287 @@
+/*HEADER*/
+
+header /*container*/{
+    background-image: url("../IMAGES/letscoder-sin-fondo.png");
+    height: 100px; 
+    background-color: #74c69dff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y:bottom;
+    background-position-x: 30px;
+    margin: auto;
+    
+}
+
+.menunav /*parent*/{
+    margin-left: 1100px;
+    height: 99px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.opcion /*child*/ {
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    background-color: #40916cff;
+    line-height: 67px;
+}
+
+/*para modficar ultimo child exclusivamente
+.opcion:last-child{border-right: none;}*/
+
+.opcion a /*texto de los links*/{
+    text-decoration: none;
+    color: white;
+    font-family: space mono;
+}
+
+/*NO FUNCIONA BIEN
+.active{
+    background-color: #1b4332ff;
+}*/
+
+
+/*FOOTER*/
+
+footer /*container*/{
+    /*margin-top: 765px;*/
+    background-color: #40916cff;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footerimages /*parent*/{
+    height: 99px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerimagesrrss /*child*/{
+    height: 50px;
+    width: 50px;
+}
+
+span {
+    color: #2d6a4fff;
+    text-align: center;
+    font-family: space mono;
+    font-size: 20pt;
+}
+
+
+/*MAIN*/
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #d8f3dcff;
+    position: relative;
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+h2 {
+    font-family: space mono;
+    height: 60px;
+    font-size: 30pt;
+    text-align: center;
+    color: #2d6a4fff;
+    -webkit-text-stroke: 0.1px black;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/*CONTACTO*/
+
+.negrita {
+    font-weight: bold;
+}
+
+.contacto { 
+    text-align: center;
+    font-family: space mono;
+    color: #2d6a4fff;
+    font-size: 20pt;
+    width: auto;
+}
+
+.contacto a{
+    text-decoration: none;
+}
+
+
+/*HOME*/
+
+p.intro {
+    color: #2d6a4fff;
+    text-align: center;
+    font-family: space mono;
+    font-size: 15pt;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.lados /*container*/{ 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    background-image: url(..//IMAGES/programming-1836330_960_720.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "nuestroscursos nuestroscursos"
+    "cursofull cursopart";
+    justify-items: center;
+}
+
+.nuestroscursos /*1 fila 2 columnas*/{
+    grid-area: nuestroscursos;
+    width: 400px;
+    font-family: space mono;
+    text-transform: uppercase;
+    font-size: 28pt;
+    color: #1b4332ff;
+    font-weight: bold;
+    text-align: center;
+    background-color: #52b788ff;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.cursofull /*1 fila 1 columna*/{
+    background-color: #52b788ff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #1b4332ff;
+    font-family: space mono;
+    font-size: 30pt;
+    grid-area: cursofull;
+    margin-bottom: 40px;
+}
+
+.cursopart /*1 fila 1 columna*/{
+    background-color: #52b788ff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #1b4332ff;
+    font-family: space mono;
+    font-size: 30pt;
+    grid-area: cursopart;
+    margin-bottom: 40px;
+}
+
+.fecha {
+    font-size: 20pt;
+    font-weight: normal;
+}
+
+.lugar {
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.boton {
+    height: 50px;
+    width: 200px;
+    font-family: space mono;
+    text-transform: uppercase;
+    font-size: 15pt;
+    color: #d8f3dcff;
+    text-shadow: 0 8px 9px #2d6a4fff, 0px -2px 1px #1b4332ff;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to bottom, #52b788ff 0%,#2d6a4fff 100%);
+    border-radius: 20px;
+}
+
+
+/*CONOCENOS*/
+
+h3 { 
+    font-family: space mono;
+    height: 60px;
+    font-size: 25pt;
+    text-align: center;
+    color: #2d6a4fff;
+}
+
+h4 { 
+    border: 1px#2d6a4fff;
+    color: #2d6a4fff;
+    writing-mode: vertical-rl;
+    font-family: space mono;
+    font-size: 32pt;
+    transform: rotate(240deg);
+    border-radius: 5%;
+    border-style:dashed;
+    
+}
+
+p.historia{ 
+    margin-right: 30px;
+    margin-left: 50px;
+    color: #2d6a4fff;
+    text-align: right;
+    font-family: space mono;
+    font-size: 16pt;
+    width: 800px;
+}
+
+.fichasmentores /*parent*/{ 
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mentores /*child*/{
+    margin: 20px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mentores.lluis {
+    align-self:flex-start;
+    width: 75%;
+}
+
+.mentores.beto {
+    align-self: center;
+    width: 75%;
+    padding-right: 100px;
+}
+
+.mentores.fer {
+    align-self: flex-end;
+    width: 75%;
+}
+
+.fotosmentores {
+    height: 250px;
+    width: 250px;
+    border: double 5px #2d6a4fff;
+}
