@@ -87,6 +87,7 @@ body {
 
 main {
     padding-bottom: 100px;
+    font-family: space mono;
 }
 
 h2 {
@@ -108,7 +109,6 @@ h2 {
 
 .contacto { 
     text-align: center;
-    font-family: space mono;
     color: #2d6a4fff;
     font-size: 20pt;
     width: auto;
@@ -288,3 +288,22 @@ p.historia{
 
 /*INFO*/
 
+table{
+    margin: auto;
+    text-align: center;
+    width: 1000px;
+}
+
+th, td{
+    font-family: 'sans-serif', monospace;
+    border-radius: 5px;
+    border: 1px solid #1b4332ff;
+}
+
+th {
+    background-color: #40916cff;
+    color: #d8f3dcff;}
+
+td {
+    background-color: #74c69dff;
+}
