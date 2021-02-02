@@ -288,6 +288,12 @@ p.historia{
 
 /*INFO*/
 
+.informacion{
+    
+    display: grid;
+    grid-template-rows: 1fr 0.2fr 1fr;
+}
+
 table{
     margin: auto;
     text-align: center;
@@ -306,4 +312,8 @@ th {
 
 td {
     background-color: #74c69dff;
+}
+
+.lista{
+    background-color: blanchedalmond;
 }
