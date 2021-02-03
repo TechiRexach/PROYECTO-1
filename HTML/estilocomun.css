@@ -147,7 +147,11 @@ h2 {
 .contacto a{
     text-decoration: none;
 }
-
+@media screen and (max-width: 800px){
+    .contacto{
+        font-size: 16pt;
+    }
+}
 
 /*HOME*/
 
@@ -253,7 +257,7 @@ p.intro {
         background-size: cover;
     }
     .cursofull, .cursopart{
-        width: 70%;
+        width: 65%;
         font-size: 17pt;
     }
     .fecha{
@@ -269,7 +273,6 @@ p.intro {
         
     }
 }
-
 
 
 /*CONOCENOS*/
@@ -343,6 +346,55 @@ p.historia{
     height: 250px;
     width: 250px;
     border: double 5px #2d6a4fff;
+}
+
+@media screen and (max-width: 800px){
+    h3{
+        font-size: 15pt;
+    }
+    h4{
+        height: 140px;
+        width: 60px;
+        font-size: 15pt;
+        text-align: center;
+        margin-top: -35%;
+    }
+    .fotosmentores{
+        height: 100px;
+        width: 100px;
+        margin-top: -40%;
+        margin-left: 10%;
+    }
+    .mentores{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mentores.lluis{
+        height: 300px;
+        width: 450px;
+        align-self: center;
+    }
+    .mentores.beto{
+        height: 300px;
+        width: 470px;
+        align-self: center;
+        padding-right: 0px; 
+    }
+    .mentores.fer{
+        height: 300px;
+        width: 450px;
+        align-self: center;
+    }
+    p.historia{
+        font-size: 10pt;
+        width: 450px;
+        margin-right: 0px;
+        margin-left: 0px;
+        text-align: center;
+        position: absolute;
+        margin-top: 25%;
+    }
 }
 
 /*INFO*/
