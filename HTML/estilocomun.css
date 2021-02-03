@@ -298,6 +298,7 @@ table{
     margin: auto;
     text-align: center;
     width: 1000px;
+    height: 400px;
 }
 
 th, td{
@@ -314,6 +315,19 @@ td {
     background-color: #74c69dff;
 }
 
-.lista{
+.listas{
     background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.listahtml{
+    background-color: lightcoral;
+}
+
+.listacss{
+    background-color: lightgreen;
+}
+h5{
+    text-align: center;
 }
