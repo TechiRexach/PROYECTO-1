@@ -13,11 +13,10 @@ header /*container*/{
 }
 
 .menunav /*parent*/{
-    margin-left: 1100px;
     height: 99px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -27,22 +26,42 @@ header /*container*/{
     text-align: center;
     background-color: #40916cff;
     line-height: 67px;
+    margin: 0px 10px 0px 10px;
 }
 
 /*para modficar ultimo child exclusivamente
 .opcion:last-child{border-right: none;}*/
 
-.opcion a /*texto de los links*/{
+.menunav a /*texto de los links*/{
     text-decoration: none;
     color: white;
     font-family: space mono;
 }
 
-/*NO FUNCIONA BIEN
-.active{
-    background-color: #1b4332ff;
-}*/
+@media screen and (max-width: 800px){
+    header {
+        height: 160px;
+        background-size: 50%;
+        background-position: top;
+    }
+    .menunav {
+        display: flex;
+       margin: auto; /*OJOOOOO*/
+       padding-top: 11%;
+       justify-content: center;
+       
+    }
+    .opcion{
+        height: 30px;
+        line-height: 30px;
+    }
+}
 
+/*NO funciona bien
+.menunav a.active{
+    background-color: #1b4332ff;
+}
+*/
 
 /*FOOTER*/
 
