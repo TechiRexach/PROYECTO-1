@@ -527,3 +527,103 @@ p, .titulostemario{
        width: 50%;
    }
 }
+
+/*FORMULARIO*/
+
+.formulario{
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 0.1fr 0.3fr;
+    grid-gap: 35px;
+    color: #1b4332ff;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: large;
+}
+.infopersonal{
+    border: dotted 2px #2d6a4fff;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+}
+.notificacion{
+    display: grid;  
+    text-align: center;
+}
+.infocurso{
+    border: dotted 2px #2d6a4fff;
+    margin: auto;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    grid-gap: 15px;
+}
+.eleccioncurso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lugarcurso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fechacomienzo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.programasconocidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.colorrespuestas{
+    color:#2d6a4fff;
+    font-size: medium;
+}
+textarea{
+    border: dotted 2px #2d6a4fff;
+    color: #2d6a4fff;
+    
+}
+.textarea{
+    margin: 10px;
+    height: 100px;
+    width: 95%;
+    font-size: x-large;
+}
+
+.infoadicional{
+    margin: 5px 0px 50px 0px ;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 150px;
+    padding-bottom: 10px;
+}
+
+.botonformulario{
+    height: 50px;
+    width: 200px;
+    text-shadow: 0 8px 9px #2d6a4fff, 0px -2px 1px #1b4332ff;
+    background: linear-gradient(to bottom, #52b788ff 0%,#2d6a4fff 100%);
+    border-radius: 20px;
+    font-family: space mono;
+    font-size: 15pt;
+    color: #d8f3dcff;
+    margin-left: 32%;
+    margin-top: -15%;
+}
+@media screen and (max-width: 800px){
+    .textarea{
+        width: 70%;
+        margin: auto;
+        font-size: large;
+    }
+}

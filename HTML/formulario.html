@@ -19,7 +19,73 @@
 
     <main>
     <h2>INSCRIPCIÓN</h2>
-        
+    <div class="formulario">
+        <form class="infopersonal">
+            <label for="nombre">Nombre</label>
+                <input type="text" id="nombre"></input>
+            <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos"></input>
+            <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad"></input>
+            <label for="cp">Codigo Postal</label>
+                <input type="texto" id="cp"></input>
+            <label for="edad">Edad</label>
+                <input type="number" id="edad"></input>
+            <label for="tel">Teléfono</label>
+                <input type="number" id="tel"></input>
+            <label for="email">Email</label>
+                <input type="email" id="email" required></input>
+            <div class="notificacion">Recibir novedades:
+                <div class="opcionnotificacion">
+                    <label for="sn" class="colorrespuestas">Si</label>
+                        <input type="radio" name="sn"></input>
+                    <label for="sn" class="colorrespuestas">No</label>
+                        <input type="radio" name="sn"></input>
+                </div>
+            </div>
+        </form>
+        <form class="infocurso">
+            <div class="eleccioncurso">¿Qué curso quieres hacer?
+                <div class="tiposcurso">
+                    <label for="fulltime" class="colorrespuestas">Full-Time</label>
+                        <input type="radio" name="time"></input>
+                    <label for="parttime" class="colorrespuestas">Part-Time</label>
+                        <input type="radio" name="time"></input>
+                </div>
+            </div>
+            <div class="lugarcurso">¿Dónde quieres hacerlo?
+                <select>
+                    <option class="opcionlugarcurso">Elige una opción</option>
+                    <option class="opcionlugarcurso">Barcelona</option>
+                    <option class="opcionlugarcurso">Madrid</option>
+                    <option class="opcionlugarcurso">Zaragoza</option>
+                    <option class="opcionlugarcurso">Sevilla</option>
+                </select>
+            </div>
+            <div class="fechacomienzo">¿Cuándo quieres empezar?
+                <input type="date" class="eleccionfechacomienzo"></input>
+            </div>
+            <div class="programasconocidos">Indícanos que herramientas conoces:
+                <div class="opcionesprogramas">
+                    <label for="html" class="colorrespuestas">HTML</label>
+                        <input type="checkbox" id="html" value="1"></input>
+                    <label for="css" class="colorrespuestas">CSS</label>
+                        <input type="checkbox" id="css" value="2"></input>
+                    <label for="terminal" class="colorrespuestas">TERMINAL</label>
+                        <input type="checkbox" id="terminal" value="3"></input>
+                    <label for="git" class="colorrespuestas">GIT</label>
+                        <input type="checkbox" id="git" value="4"></input>
+                    <label for="javascript" class="colorrespuestas">JAVASCRIPT</label>
+                        <input type="checkbox" id="javascript" value="5"></input>
+                </div>
+            </div>
+        </form>
+        <form class="infoadicional">
+            <textarea class="textarea">Si tienes alguna duda, déjanosla aquí:
+            </textarea>
+        </form>
+        <button type="submit" class="botonformulario">Enviar</button>
+    </div>    
     </main>
 
     <footer>
