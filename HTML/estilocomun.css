@@ -231,16 +231,20 @@ p.intro {
     font-weight: normal;
 }
 
-.boton {
+.boton{
     height: 50px;
     width: 200px;
-    font-family: space mono;
-    font-size: 15pt;
-    color: #d8f3dcff;
     text-shadow: 0 8px 9px #2d6a4fff, 0px -2px 1px #1b4332ff;
     text-align: center;
     background: linear-gradient(to bottom, #52b788ff 0%,#2d6a4fff 100%);
     border-radius: 20px;
+}
+
+.boton a{
+    text-decoration: none;
+    font-family: space mono;
+    font-size: 15pt;
+    color: #d8f3dcff;
 }
 
 @media screen and (max-width: 800px){
@@ -271,7 +275,9 @@ p.intro {
         height: 20px;
         width: 90%;
         font-size: 8pt;
-        
+    }
+    .boton a{
+        font-size: 8pt;
     }
 }
 
@@ -516,7 +522,7 @@ p, .titulostemario{
         font-size: 10pt;
         width: 150px;
     }
-    
+
    .horario{
        width: 50%;
    }
