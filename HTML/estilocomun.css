@@ -278,9 +278,9 @@ p.intro {
     }
     .boton a{
         font-size: 8pt;
+        text-shadow: none;
     }
 }
-
 
 /*CONOCENOS*/
 
@@ -529,23 +529,65 @@ p, .titulostemario{
 }
 
 /*FORMULARIO*/
-
 .formulario{
     display: grid;
-    grid-template-rows: 1.5fr 1fr 0.1fr 0.3fr;
-    grid-gap: 35px;
-    color: #1b4332ff;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     justify-content: center;
-    margin-top: 25px;
+    color: #1b4332ff;
     font-size: large;
+    margin-top: 30px;
 }
 .infopersonal{
     border: dotted 2px #2d6a4fff;
-    margin: auto;
-    padding: 5px;
+    margin:auto;
+    padding: 20px;
     display: flex;
     flex-direction:column;
-    width: 50%;
+    width: 70%;
+}
+.nombreapellidos{
+    display: flex;
+    flex-direction: column;
+}
+.ciudadcp{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.inputciudad{
+    width: 200px;
+}
+.inputedad{
+    margin-left: 22px;
+    width: 200px;
+}
+.inputcp{
+    width: 200px;
+}
+.inputtelefono{
+    margin-left: 55px;
+    width: 200px;
+}
+.ciudad{
+    flex-grow: 5;
+}
+.cp{
+    flex-grow: 5;
+}
+.edadtel{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.edad{
+    flex-grow: 5;
+}
+.telefono{
+    flex-grow: 5;
+}
+.email{
+    margin-top: 10px;
 }
 .notificacion{
     display: grid;  
@@ -553,12 +595,14 @@ p, .titulostemario{
 }
 .infocurso{
     border: dotted 2px #2d6a4fff;
-    margin: auto;
+    margin:auto;
     padding: 5px;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
     grid-gap: 15px;
+    width: 800px;
+    height: 305px;
 }
 .eleccioncurso{
     display: flex;
@@ -588,26 +632,24 @@ p, .titulostemario{
     font-size: medium;
 }
 textarea{
-    border: dotted 2px #2d6a4fff;
-    color: #2d6a4fff;
-    
+    border: double 2px #2d6a4fff;
+    color: #1b4332ff;
+    background-color: #d8f3dcff;
 }
 .textarea{
-    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
     height: 100px;
-    width: 95%;
+    width: 120%;
     font-size: x-large;
+    margin-left: 12.7%;
 }
-
 .infoadicional{
-    margin: 5px 0px 50px 0px ;
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 150px;
-    padding-bottom: 10px;
+    width: 1000px;
 }
-
 .botonformulario{
     height: 50px;
     width: 200px;
@@ -617,13 +659,130 @@ textarea{
     font-family: space mono;
     font-size: 15pt;
     color: #d8f3dcff;
-    margin-left: 32%;
-    margin-top: -15%;
+    margin:auto;
 }
 @media screen and (max-width: 800px){
-    .textarea{
-        width: 70%;
-        margin: auto;
+    .formulario{
+        margin-top: -50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        color: #1b4332ff;
         font-size: large;
+    }
+    .infopersonal{
+        border: dotted 2px #2d6a4fff;
+        margin: auto;
+        width: 50%;
+        display: grid;
+    }
+    .nombreapellidos{
+        display: grid;
+    }
+    .ciudadcp{
+        margin-top: auto;
+       display: grid;
+    }
+    .ciudad{
+        display: grid;
+    }
+    .cp{
+        display: grid;
+    }
+    .edadtel{
+        margin-top: auto;
+        display: grid;
+    }
+    .edad{
+        display: grid;
+    }
+    .telefono{
+        display: grid;
+    }
+    .notificacion{
+        display: grid;  
+        text-align: center;
+    }
+    .infocurso{
+        border: dotted 2px #2d6a4fff;
+        padding: 5px;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        align-items: center;
+        grid-gap: 15px;
+        width: 70%;
+        text-align: center;
+        margin-top: -20px;
+    }
+    .eleccioncurso{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lugarcurso{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fechacomienzo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .programasconocidos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .colorrespuestas{
+        color:#2d6a4fff;
+        font-size: medium;
+    }
+    textarea{
+        border: dotted 2px #2d6a4fff;
+        color: #1b4332ff;
+        
+    }
+    .textarea{
+        margin: auto;
+        height: 100px;
+        width: 75%;
+        font-size: large;
+        margin-top: 50px;
+    }
+    .infoadicional{
+        margin: 5px 0px 50px 0px ;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 150px;
+        padding-bottom: 10px;
+    }
+    .botonformulario{
+        height: 50px;
+        width: 200px;
+        text-shadow: 0 8px 9px #2d6a4fff, 0px -2px 1px #1b4332ff;
+        background: linear-gradient(to bottom, #52b788ff 0%,#2d6a4fff 100%);
+        border-radius: 20px;
+        font-family: space mono;
+        font-size: 15pt;
+        color: #d8f3dcff;
+        margin-bottom: 50px;
+    }
+    .inputciudad{
+        width: auto;
+    }
+    .inputedad{
+        width: auto;
+        margin-left: 0;
+    }
+    .inputcp{
+        width: auto;
+    }
+    .inputtelefono{
+        width: auto;
+        margin-left: 0px;
     }
 }
