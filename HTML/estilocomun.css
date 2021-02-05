@@ -34,9 +34,9 @@ header /*container*/{
     font-family: space mono;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 667px){
     header {
-        height: 160px;
+        height: 130px;
         background-size: 50%;
         background-position: top;
     }
@@ -89,13 +89,13 @@ span {
     font-size: 20pt;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 667px){
     span {
-        font-size: 13pt;
+        font-size: 12pt;
     }
     .footerimagesrrss{
-        height: 35px;
-        width: 35px;
+        height: 30px;
+        width: 30px;
     }
 }
 
@@ -149,7 +149,7 @@ h2 {
 
 @media screen and (max-width: 800px){
     .contacto{
-        font-size: 16pt;
+        font-size: 14pt;
     }
 }
 
@@ -248,35 +248,42 @@ p.intro {
 
 @media screen and (max-width: 800px){
     p.intro {
-        width: 450px;
+        width: 300px;
         font-size: 10pt;
         text-align: center;
     }
     .nuestroscursos{
-        width: 300px;
-        font-size: 18pt;
+        width: 200px;
+        font-size: 15pt;
     }
     .lados{
-        width: 400px;
+        width: 300px;
         background-size: cover;
     }
-    .cursofull, .cursopart{
-        width: 65%;
-        font-size: 17pt;
+    .cursofull{
+        width: 55%;
+        height: 75%;
+    }
+    .cursopart{
+        width: 55%;
+        height: 40%;
+    }
+    .titulocurso{
+    font-size: 10pt;
     }
     .fecha{
-        font-size: 12pt;
+        font-size: 9pt;
     }
     .lugar{
         font-size: 7pt;
+        margin-bottom: -20px;
     }
     .boton{
         height: 20px;
         width: 90%;
-        font-size: 8pt;
     }
     .boton a{
-        font-size: 8pt;
+        font-size: 6pt;
         text-shadow: none;
     }
 }
@@ -384,6 +391,7 @@ p.historia{
         width: 470px;
         align-self: center;
         padding-right: 0px; 
+        margin-top: -50px;
     }
     .mentores.fer{
         height: 300px;
@@ -392,12 +400,18 @@ p.historia{
     }
     p.historia{
         font-size: 10pt;
-        width: 450px;
+        width: 300px;
         margin-right: 0px;
         margin-left: 0px;
         text-align: center;
         position: absolute;
         margin-top: 25%;
+    }
+    p.textobeto{
+        margin-top: 50%;
+        margin-bottom: 10px;
+        width: 350px;
+        text-align: center;
     }
 }
 
@@ -487,38 +501,35 @@ p, .titulostemario{
         display: grid;
         grid-template-rows: 0.7fr 0.1fr 0.1fr 1fr;
         justify-content: center;
-    }
-
+    } 
     h3.h3info{
         margin-bottom: -30px;
     }
-
     table{
         width: 50%;
     }
-
     th, td{
-        font-size: 9pt;
+        font-size: 7.5pt;
+        height: 30px;
+        width: 50%;
     }
-
     .listas{
         justify-content: space-evenly;
-        margin-top: -20px;
+        margin-top: -30px;
     }
-
     .listacss{
-        text-align: center;
-        font-size: 10pt;
-        width: 150px;
+        text-align: justify;
+        font-size: 6pt;
+        width: 100px;
         height: 45%;
+        padding-left: 30px;
+        margin-top: 11px;
     }
-
     .listahtml{
         text-align: left;
-        font-size: 10pt;
-        width: 150px;
+        font-size: 8pt;
+        width: 120px;
     }
-
    .horario{
        width: 50%;
    }
@@ -730,7 +741,7 @@ textarea{
         grid-template-rows: repeat(4, 1fr);
         align-items: center;
         grid-gap: 15px;
-        width: 70%;
+        width: 55%;
         text-align: center;
         margin-top: -20px;
     }
@@ -768,7 +779,7 @@ textarea{
     .textarea{
         margin: auto;
         height: 100px;
-        width: 75%;
+        width: 55%;
         font-size: large;
         margin-top: 50px;
     }
